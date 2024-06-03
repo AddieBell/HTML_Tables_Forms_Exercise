@@ -1,13 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML Tables and Forms</title>
-  </head>
-  <body>
-    <main>
-      <!-- Complete the Exercises HERE -->
-    </main>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Tables and Forms</title>
+
+  <style>
+    tbody {
+      text-align: center;
+    }
+
+    label, input {
+      display: block;
+    }
+
+    table {
+      border-collapse: collapse;
+      background-color: bisque;
+    }
+
+    th, td {
+      border: 1px solid brown;
+    }
+
+    tr:nth-child(odd) {
+      background-color: burlywood;
+    }
+
+    thead >tr {
+      background-color: aliceblue;
+    }
+
+  </style>
+</head>
+
+<body>
+  <main>
+    <table>
+      <caption>Soda Nutritional Facts</caption>
+      <thead>
+        <tr>
+          <th>Drink</th>
+          <th>Total Servings</th>
+          <th>Serving Size</th>
+          <th>Calories per Serving</th>
+          <th>Carbs per Serving</th>
+          <th>Sugars per Serving</th>
+          <th>Sodium per Serving</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Coca Cola</td>
+          <td>1 can</td>
+          <td>1 can</td>
+          <td>140 calories</td>
+          <td>39g</td>
+          <td>39g</td>
+          <td>45mg</td>
+        </tr>
+        <tr>
+          <td>Pepsi</td>
+          <td>1 can</td>
+          <td>1 can</td>
+          <td>150 calories</td>
+          <td>41g</td>
+          <td>41g</td>
+          <td>30mg</td>
+        </tr>
+        <tr>
+          <td>Coca Cola Zero</td>
+          <td>1 can</td>
+          <td>1 can</td>
+          <td>0 calories</td>
+          <td>0g</td>
+          <td>0g</td>
+          <td>40mg</td>
+        </tr>
+        <tr>
+          <td>Dr.Pepper</td>
+          <td>1 can</td>
+          <td>1 can</td>
+          <td>150 calories</td>
+          <td>40g</td>
+          <td>39g</td>
+          <td>55mg</td>
+        </tr>
+        <tr>
+          <td>Mountain Dew</td>
+          <td>1 can</td>
+          <td>1 can</td>
+          <td>170 calories</td>
+          <td>46g</td>
+          <td>46g</td>
+          <td>60mg</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <form>
+      <fieldset>
+        <legend>Soda Nutritional Facts</legend>
+
+        <label for="drink">Drink</label>
+        <input type="text" id="drink" name="drink" /><br>
+
+        <label for="totalServings">Total Servings</label>
+        <input type="text" id="totalServings" name="total Servings" /><br>
+
+        <label for="servingSize">Serving size</label>
+        <input type="text" id="servingSize" name="servingSize" /><br>
+
+        <label for="calories">Calories per Serving</label>
+        <input type="calories" id="lname" name="calories" /><br>
+
+        <label for="carbs">Carbs per Serving</label>
+        <input type="text" id="lname" name="lname" /><br>
+
+        <label for="lname">Carbs per Serving</label>
+        <input type="text" id="carbs" name="carbs" /><br>
+
+        <label for="sugars">Sugars per Serving</label>
+        <input type="text" id="sugars" name="sugars" /><br>
+
+        <label for="sodium">Sodium per Serving</label>
+        <input type="text" id="sodium" name="sodium" /><br>
+
+        <button type="submit">Submit</button>
+
+      </fieldset>
+    </form>
+  </main>
+</body>
+
 </html>
